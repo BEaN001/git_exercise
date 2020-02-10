@@ -1,2 +1,5 @@
-a = 1
+import numpy as np
+
+a = np.array([0, 0, 0])
+
 

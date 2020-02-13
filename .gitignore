@@ -125,6 +125,7 @@ dmypy.json
 .pyre/
 
 .idea
+.idea/workspace.xml
 *.iml
 *.xml
 target

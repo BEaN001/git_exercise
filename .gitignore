@@ -126,4 +126,5 @@ dmypy.json
 
 .idea
 *.iml
+*.xml
 target

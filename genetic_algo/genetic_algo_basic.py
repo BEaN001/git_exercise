@@ -41,27 +41,31 @@ def mutate(child):
     return child
 
 
-pop = np.random.randint(2, size=(POP_SIZE, DNA_SIZE))   # initialize the pop DNA
+if __name__ == "__main__":
+    pop = np.random.randint(2, size=(POP_SIZE, DNA_SIZE))   # initialize the pop DNA
 
-plt.ion()       # something about plotting
-x = np.linspace(*X_BOUND, 200)
-plt.plot(x, F(x))
+    plt.ion()       # something about plotting
+    x = np.linspace(*X_BOUND, 200)
+    plt.plot(x, F(x))
 
-for _ in range(N_GENERATIONS):
-    F_values = F(translateDNA(pop))    # compute function value by extracting DNA
+    for _ in range(N_GENERATIONS):
+        F_values = F(translateDNA(pop))    # compute function value by extracting DNA
 
-    # something about plotting
-    if 'sca' in globals(): sca.remove()
-    sca = plt.scatter(translateDNA(pop), F_values, s=200, lw=0, c='red', alpha=0.5); plt.pause(0.05)
+        # something about plotting
+        if 'sca' in globals():
+            sca.remove()
+        sca = plt.scatter(translateDNA(pop), F_values, s=200, lw=0, c='red', alpha=0.5); plt.pause(0.05)
 
-    # GA part (evolution)
-    fitness = get_fitness(F_values)
-    print("Most fitted DNA: ", pop[np.argmax(fitness), :])
-    pop = select(pop, fitness)
-    pop_copy = pop.copy()
-    for parent in pop:
-        child = crossover(parent, pop_copy)
-        child = mutate(child)
-        parent[:] = child       # parent is replaced by its child
+        # GA part (evolution)
+        fitness = get_fitness(F_values)  # find non-zero fitness for selection
+        print("Most fitted DNA: ", pop[np.argmax(fitness), :])
+        pop = select(pop, fitness)  # nature selection wrt pop's fitness
+        pop_copy = pop.copy()
+        for parent in pop:
+            child = crossover(parent, pop_copy)
+            child = mutate(child)
+            parent[:] = child       # parent is replaced by its child
 
-plt.ioff(); plt.show()
+    plt.ioff()
+    plt.show()
+

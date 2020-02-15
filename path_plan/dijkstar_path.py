@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     print(find_path(graph, 1, 4))
 
-    # 
+    #
     graph = Graph()
     graph.add_edge(1, 2, (110, 'Main Street'))
     graph.add_edge(2, 3, (125, 'Main Street'))

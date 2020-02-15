@@ -16,6 +16,22 @@ url = "https://mirrors.aliyun.com/pypi/simple"
 
 [[package]]
 category = "main"
+description = "Dijkstra/A*"
+name = "dijkstar"
+optional = false
+python-versions = "*"
+version = "2.5.0"
+
+[package.extras]
+dev = ["coverage", "flake8", "tox"]
+
+[package.source]
+reference = 'aliyun'
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+
+[[package]]
+category = "main"
 description = "A fast implementation of the Cassowary constraint solver"
 name = "kiwisolver"
 optional = false
@@ -135,13 +151,16 @@ type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
 
 [metadata]
-content-hash = "d03d158aa7e72fda597ffe263f6ffddc475662b505e1301891425d6b36dcf64b"
+content-hash = "307da21d10096243c3e53075187ae7fbba02e356f97054f2fd8bbc5e6cddeace"
 python-versions = "^3.6"
 
 [metadata.files]
 cycler = [
     {file = "cycler-0.10.0-py2.py3-none-any.whl", hash = "md5:2820ec00c7dd68487bde1a7cdb165904"},
     {file = "cycler-0.10.0.tar.gz", hash = "md5:4cb42917ac5007d1cdff6cccfe2d016b"},
+]
+dijkstar = [
+    {file = "Dijkstar-2.5.0.tar.gz", hash = "sha256:bf3f71c80a36b33524905c3b59af06758070d3cede060e42fb273acd8399d0ae"},
 ]
 kiwisolver = [
     {file = "kiwisolver-1.1.0-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:7f4dd50874177d2bb060d74769210f3bce1af87a8c7cf5b37d032ebf94f0aca3"},

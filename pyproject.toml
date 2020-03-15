@@ -17,7 +17,7 @@ PyQt5 = "^5.14.1"
 dijkstar = "^2.5.0"
 jupyter = "^1.0.0"
 opencv-python = "4.1.0.25"
-opencv-contrib-python = "^4.2.0"
+opencv-contrib-python = "4.1.0.25"
 
 [tool.poetry.dev-dependencies]
 

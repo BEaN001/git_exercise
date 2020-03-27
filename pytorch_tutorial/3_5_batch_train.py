@@ -3,7 +3,8 @@ import torch.utils.data as Data
 
 torch.manual_seed(1)    # reproducible
 
-BATCH_SIZE = 5
+BATCH_SIZE = 2
+# BATCH_SIZE = 5
 # BATCH_SIZE = 8
 
 x = torch.linspace(1, 10, 10)       # this is x data (torch tensor)

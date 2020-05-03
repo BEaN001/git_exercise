@@ -130,3 +130,6 @@ dmypy.json
 *.iml
 *.xml
 target
+# something for deeplearnings
+log/
+MNIST_data/

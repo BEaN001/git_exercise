@@ -133,3 +133,4 @@ target
 # something for deeplearnings
 log/
 MNIST_data/
+mnist/

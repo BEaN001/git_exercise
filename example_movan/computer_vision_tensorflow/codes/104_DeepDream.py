@@ -13,11 +13,11 @@ import requests, os, zipfile
 
 
 # picking a layer and channel from tensorboard to visualize
-IMAGE_PATH = "../example_images/morvan1.jpg"
+IMAGE_PATH = "/Users/binyu/Desktop/image.jpeg"
 LAYER = 'mixed4d_3x3_bottleneck_pre_relu'       # try finding layer name on tensorboard
 CHANNEL = 60
 MODEL_PATH = '../models/tensorflow_inception_graph.pb'
-OUTPUT_DIR = '../results/'
+OUTPUT_DIR = '/Users/binyu/Desktop/'
 
 
 def tf_func(*argtypes):

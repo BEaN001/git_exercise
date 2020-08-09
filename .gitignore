@@ -132,5 +132,6 @@ dmypy.json
 target
 # something for deeplearnings
 log/
+models/
 MNIST_data/
 mnist/

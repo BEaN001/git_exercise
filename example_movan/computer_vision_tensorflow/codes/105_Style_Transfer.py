@@ -13,10 +13,10 @@ from PIL import Image
 from scipy.optimize import fmin_l_bfgs_b
 
 # image and model path
-CONTENT_PATH = '../example_images/morvan2.jpg'
-STYLE_PATH = '../example_images/style5.jpg'
-OUTPUT_DIR = '../results/'
-VGG_PATH = '../models/vgg16.npy'
+CONTENT_PATH = '/Users/binyu/Desktop/nw.jpeg'
+STYLE_PATH = '/Users/binyu/Desktop/stype.jpeg'
+OUTPUT_DIR = '/Users/binyu/Desktop/'
+VGG_PATH = '/Users/binyu/Downloads/vgg16.npy'
 
 # weight for loss (content loss, style loss and total variation loss)
 W_CONTENT = 0.001
@@ -32,7 +32,7 @@ class StyleTransfer:
     def __init__(self, vgg16_npy, w_content, w_style, w_variation, height, width):
         # pre-trained parameters
         try:
-            self.data_dict = np.load(vgg16_npy, encoding='latin1').item()
+            self.data_dict = np.load(vgg16_npy, encoding='latin1', allow_pickle=True).item()
         except FileNotFoundError:
             print(
                 'Please download VGG16 parameters from here https://mega.nz/#!YU1FWJrA!O1ywiCS2IiOlUCtCpI6HTJOMrneN-Qdv3ywQP5poecM\nOr from my Baidu Cloud: https://pan.baidu.com/s/1Spps1Wy0bvrQHH2IMkRfpg')

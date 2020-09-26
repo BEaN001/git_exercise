@@ -1,0 +1,93 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontsize=12 height=0.2 ranksep=0.1 shape=box style=filled]
+	5003497144 [label=AddmmBackward]
+	5003497368 -> 5003497144
+	5003497368 [label="
+ (2)" fillcolor=lightblue]
+	5003497256 -> 5003497144
+	5003497256 [label=ReluBackward0]
+	5003558080 -> 5003497256
+	5003558080 [label=AddmmBackward]
+	5003558192 -> 5003558080
+	5003558192 [label="
+ (128)" fillcolor=lightblue]
+	5003558304 -> 5003558080
+	5003558304 [label=ReluBackward0]
+	5003558416 -> 5003558304
+	5003558416 [label=AddmmBackward]
+	5003558472 -> 5003558416
+	5003558472 [label="
+ (1200)" fillcolor=lightblue]
+	5003558528 -> 5003558416
+	5003558528 [label=ViewBackward]
+	5003558696 -> 5003558528
+	5003558696 [label=ReluBackward0]
+	5003558808 -> 5003558696
+	5003558808 [label=NativeBatchNormBackward]
+	5004124232 -> 5003558808
+	5004124232 [label=MkldnnConvolutionBackward]
+	5004124456 -> 5004124232
+	5004124456 [label=ReluBackward0]
+	5004124680 -> 5004124456
+	5004124680 [label=NativeBatchNormBackward]
+	5004124792 -> 5004124680
+	5004124792 [label=MkldnnConvolutionBackward]
+	5004125016 -> 5004124792
+	5004125016 [label=ReluBackward0]
+	5004125240 -> 5004125016
+	5004125240 [label=NativeBatchNormBackward]
+	5004125352 -> 5004125240
+	5004125352 [label=MkldnnConvolutionBackward]
+	5004125576 -> 5004125352
+	5004125576 [label="
+ (12, 3, 3, 3)" fillcolor=lightblue]
+	5004125632 -> 5004125352
+	5004125632 [label="
+ (12)" fillcolor=lightblue]
+	5004125408 -> 5004125240
+	5004125408 [label="
+ (12)" fillcolor=lightblue]
+	5004125464 -> 5004125240
+	5004125464 [label="
+ (12)" fillcolor=lightblue]
+	5004125072 -> 5004124792
+	5004125072 [label="
+ (24, 12, 3, 3)" fillcolor=lightblue]
+	5004125128 -> 5004124792
+	5004125128 [label="
+ (24)" fillcolor=lightblue]
+	5004124848 -> 5004124680
+	5004124848 [label="
+ (24)" fillcolor=lightblue]
+	5004124904 -> 5004124680
+	5004124904 [label="
+ (24)" fillcolor=lightblue]
+	5004124512 -> 5004124232
+	5004124512 [label="
+ (48, 24, 3, 3)" fillcolor=lightblue]
+	5004124568 -> 5004124232
+	5004124568 [label="
+ (48)" fillcolor=lightblue]
+	5004124288 -> 5003558808
+	5004124288 [label="
+ (48)" fillcolor=lightblue]
+	5004124344 -> 5003558808
+	5004124344 [label="
+ (48)" fillcolor=lightblue]
+	5003558584 -> 5003558416
+	5003558584 [label=TBackward]
+	5003558752 -> 5003558584
+	5003558752 [label="
+ (1200, 1200)" fillcolor=lightblue]
+	5003558248 -> 5003558080
+	5003558248 [label=TBackward]
+	5003558360 -> 5003558248
+	5003558360 [label="
+ (128, 1200)" fillcolor=lightblue]
+	5003556904 -> 5003497144
+	5003556904 [label=TBackward]
+	5003558024 -> 5003556904
+	5003558024 [label="
+ (2, 128)" fillcolor=lightblue]
+}

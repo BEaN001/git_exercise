@@ -136,5 +136,7 @@ models/
 MNIST_data/
 mnist/
 datas/
+runs/
 checkpoints/
 logs/
+data/

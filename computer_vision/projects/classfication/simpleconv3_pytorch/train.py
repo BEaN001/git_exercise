@@ -82,7 +82,7 @@ if __name__ == '__main__':
         ]),
     }
 
-    data_dir = './da/'
+    data_dir = '/Users/binyu/Documents/git_exercise/pytorch_tutorial/pytorch_1_4/data/hymenoptera_data'
     image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                               data_transforms[x]) for x in ['train', 'val']}
     dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
@@ -107,7 +107,7 @@ if __name__ == '__main__':
                            criterion=criterion,
                            optimizer=optimizer_ft,
                            scheduler=exp_lr_scheduler,
-                           num_epochs=500)
+                           num_epochs=5)
 
     os.mkdir('models')
     torch.save(modelclc.state_dict(), 'models/model.ckpt')

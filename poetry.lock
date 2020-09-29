@@ -239,13 +239,13 @@ category = "main"
 description = "Simple Python interface for Graphviz"
 name = "graphviz"
 optional = false
-python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
-version = "0.14.1"
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+version = "0.9"
 
 [package.extras]
-dev = ["tox (>=3)", "flake8", "pep8-naming", "wheel", "twine"]
-docs = ["sphinx (>=1.8)", "sphinx-rtd-theme"]
-test = ["mock (>=3)", "pytest (>=4)", "pytest-mock (>=2)", "pytest-cov"]
+dev = ["tox (>=3.0)", "flake8", "pep8-naming", "wheel", "twine"]
+docs = ["sphinx (>=1.3)", "sphinx-rtd-theme"]
+test = ["mock (>=2)", "pytest (>=3.4)", "pytest-mock (>=1.8)", "pytest-cov"]
 
 [package.source]
 reference = 'aliyun'
@@ -1543,7 +1543,7 @@ type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
 
 [metadata]
-content-hash = "6f5f02679bda7c7689cba828469922fd67631cd2bd4a9067479cdc16e57fcc73"
+content-hash = "a5dadf1096e6d56fd677be376c4af9a59fbd612a3462b18a98f81e6f8197b467"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -1611,8 +1611,8 @@ future = [
     {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
 ]
 graphviz = [
-    {file = "graphviz-0.14.1-py2.py3-none-any.whl", hash = "sha256:088562ef6e3dad5e8dde9389caf4a84f768e65dcaa08238cfcdf36d2b30ccf61"},
-    {file = "graphviz-0.14.1.zip", hash = "sha256:f5aad52a652c06825dcc5ee018d920fca26aef339386866094597fb3f2f222ce"},
+    {file = "graphviz-0.9-py2.py3-none-any.whl", hash = "sha256:310bacfb969f0ac7c872610500e017c3e82b24a8abd33d289e99af162de30cb8"},
+    {file = "graphviz-0.9.zip", hash = "sha256:865afa6ab9775cf29db03abd8e571a164042c726c35a1b3c1e2b8c4c645e2993"},
 ]
 gym = [
     {file = "gym-0.17.2.tar.gz", hash = "sha256:bb495aa56995b01274a2213423bf5ba05b8f4fd51c6dc61e9d4abddd1189718e"},

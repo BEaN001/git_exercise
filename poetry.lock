@@ -679,6 +679,32 @@ url = "https://mirrors.aliyun.com/pypi/simple"
 
 [[package]]
 category = "main"
+description = "Machine Learning Library Extensions"
+name = "mlxtend"
+optional = false
+python-versions = "*"
+version = "0.17.3"
+
+[package.dependencies]
+joblib = ">=0.13.2"
+matplotlib = ">=3.0.0"
+numpy = ">=1.16.2"
+pandas = ">=0.24.2"
+scikit-learn = ">=0.20.3"
+scipy = ">=1.2.1"
+setuptools = "*"
+
+[package.extras]
+docs = ["mkdocs"]
+testing = ["pytest"]
+
+[package.source]
+reference = 'aliyun'
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+
+[[package]]
+category = "main"
 description = "Rolling backport of unittest.mock for all Pythons"
 name = "mock"
 optional = false
@@ -1543,7 +1569,7 @@ type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
 
 [metadata]
-content-hash = "a5dadf1096e6d56fd677be376c4af9a59fbd612a3462b18a98f81e6f8197b467"
+content-hash = "de0c6be326d8e62cb6fbc9d2f1c427a2f6cd2c09d9b71bd67ae9aa21bf03f235"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -1799,6 +1825,10 @@ matplotlib = [
 mistune = [
     {file = "mistune-0.8.4-py2.py3-none-any.whl", hash = "sha256:88a1051873018da288eee8538d476dffe1262495144b33ecb586c4ab266bb8d4"},
     {file = "mistune-0.8.4.tar.gz", hash = "sha256:59a3429db53c50b5c6bcc8a07f8848cb00d7dc8bdb431a4ab41920d201d4756e"},
+]
+mlxtend = [
+    {file = "mlxtend-0.17.3-py2.py3-none-any.whl", hash = "sha256:7504c6e3ad633996c1bb2589b44ac2cd559b9e7212361ba115daf89809ffa031"},
+    {file = "mlxtend-0.17.3.tar.gz", hash = "sha256:66d10059630a84c394cd8d82bca62c3da77b9fe6566f03656f2b52e353b8fe06"},
 ]
 mock = [
     {file = "mock-4.0.2-py3-none-any.whl", hash = "sha256:3f9b2c0196c60d21838f307f5825a7b86b678cedc58ab9e50a8988187b4d81e0"},

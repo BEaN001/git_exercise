@@ -1,6 +1,7 @@
 import time
 import numpy as np
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import datasets
 from torchvision import transforms
@@ -10,13 +11,12 @@ from torch.utils.data import DataLoader
 if torch.cuda.is_available():
     torch.backends.cudnn.deterministic = True
 
-
 ##########################
 ### SETTINGS
 ##########################
 
 # Device
-device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
 
 # Hyperparameters
 random_seed = 1
@@ -63,7 +63,9 @@ for images, labels in train_loader:
 ### MODEL
 ##########################
 
+
 class ConvNet(torch.nn.Module):
+
     def __init__(self, num_classes):
         super(ConvNet, self).__init__()
 
@@ -71,37 +73,39 @@ class ConvNet(torch.nn.Module):
         # (w - k + 2*p)/s + 1 = o
         # => p = (s(o-1) - w + k)/2
 
-        # 28x28x1 => 28x28x8
+        # 28x28x1 => 28x28x4
         self.conv_1 = torch.nn.Conv2d(in_channels=1,
-                                      out_channels=8,
+                                      out_channels=4,
                                       kernel_size=(3, 3),
                                       stride=(1, 1),
                                       padding=1)  # (1(28-1) - 28 + 3) / 2 = 1
-        # 28x28x8 => 14x14x8
+        # 28x28x4 => 14x14x4
         self.pool_1 = torch.nn.MaxPool2d(kernel_size=(2, 2),
                                          stride=(2, 2),
                                          padding=0)  # (2(14-1) - 28 + 2) = 0
-        # 14x14x8 => 14x14x16
-        self.conv_2 = torch.nn.Conv2d(in_channels=8,
-                                      out_channels=16,
+        # 14x14x4 => 14x14x8
+        self.conv_2 = torch.nn.Conv2d(in_channels=4,
+                                      out_channels=8,
                                       kernel_size=(3, 3),
                                       stride=(1, 1),
                                       padding=1)  # (1(14-1) - 14 + 3) / 2 = 1
-        # 14x14x16 => 7x7x16
+        # 14x14x8 => 7x7x8
         self.pool_2 = torch.nn.MaxPool2d(kernel_size=(2, 2),
                                          stride=(2, 2),
                                          padding=0)  # (2(7-1) - 14 + 2) = 0
 
-        self.linear_1 = torch.nn.Linear(7 * 7 * 16, num_classes)
+        self.linear_1 = torch.nn.Linear(7 * 7 * 8, num_classes)
 
-        # optionally initialize weights from Gaussian;
-        # Guassian weight init is not recommended and only for demonstration purposes
+        ###############################################
+        # Reinitialize weights using He initialization
+        ###############################################
         for m in self.modules():
-            if isinstance(m, torch.nn.Conv2d) or isinstance(m, torch.nn.Linear):
-                m.weight.data.normal_(0.0, 0.01)
-                m.bias.data.zero_()
-                if m.bias is not None:
-                    m.bias.detach().zero_()
+            if isinstance(m, torch.nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight.detach())
+                m.bias.detach().zero_()
+            elif isinstance(m, torch.nn.Linear):
+                nn.init.kaiming_normal_(m.weight.detach())
+                m.bias.detach().zero_()
 
     def forward(self, x):
         out = self.conv_1(x)
@@ -112,7 +116,7 @@ class ConvNet(torch.nn.Module):
         out = F.relu(out)
         out = self.pool_2(out)
 
-        logits = self.linear_1(out.view(-1, 7 * 7 * 16))
+        logits = self.linear_1(out.view(-1, 7 * 7 * 8))
         probas = F.softmax(logits, dim=1)
         return logits, probas
 
@@ -170,8 +174,16 @@ for epoch in range(num_epochs):
 
 print('Total Training Time: %.2f min' % ((time.time() - start_time) / 60))
 
-with torch.set_grad_enabled(False): # save memory during inference
-    print('Test accuracy: %.2f%%' % (compute_accuracy(model, test_loader)))
+print('Test accuracy: %.2f%%' % (compute_accuracy(model, test_loader)))
+
+
+
+
+
+
+
+
+
 
 
 

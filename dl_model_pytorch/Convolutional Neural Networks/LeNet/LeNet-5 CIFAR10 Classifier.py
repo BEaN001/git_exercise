@@ -35,34 +35,40 @@ NUM_CLASSES = 10
 
 # Other
 DEVICE = "cuda:0"
-GRAYSCALE = True
+GRAYSCALE = False
 
 ##########################
-### MNIST DATASET
+### CIFAR-10 Dataset
 ##########################
 
-resize_transform = transforms.Compose([transforms.Resize((32, 32)),
-                                       transforms.ToTensor()])
 
 # Note transforms.ToTensor() scales input images
 # to 0-1 range
-train_dataset = datasets.MNIST(root='../data',
-                               train=True,
-                               transform=resize_transform,
-                               download=True)
+train_dataset = datasets.CIFAR10(root='../data',
+                                 train=True,
+                                 transform=transforms.ToTensor(),
+                                 download=True)
 
-test_dataset = datasets.MNIST(root='../data',
-                              train=False,
-                              transform=resize_transform)
+test_dataset = datasets.CIFAR10(root='../data',
+                                train=False,
+                                transform=transforms.ToTensor())
 
 
 train_loader = DataLoader(dataset=train_dataset,
                           batch_size=BATCH_SIZE,
+                          num_workers=8,
                           shuffle=True)
 
 test_loader = DataLoader(dataset=test_dataset,
                          batch_size=BATCH_SIZE,
+                         num_workers=8,
                          shuffle=False)
+
+# Checking the dataset
+for images, labels in train_loader:
+    print('Image batch dimensions:', images.shape)
+    print('Image label dimensions:', labels.shape)
+    break
 
 # Checking the dataset
 for images, labels in train_loader:
@@ -105,16 +111,16 @@ class LeNet5(nn.Module):
 
         self.features = nn.Sequential(
 
-            nn.Conv2d(in_channels, 6, kernel_size=5),
+            nn.Conv2d(in_channels, 6 * in_channels, kernel_size=5),
             nn.MaxPool2d(kernel_size=2),
-            nn.Conv2d(6, 16, kernel_size=5),
+            nn.Conv2d(6 * in_channels, 16 * in_channels, kernel_size=5),
             nn.MaxPool2d(kernel_size=2)
         )
 
         self.classifier = nn.Sequential(
-            nn.Linear(16 * 5 * 5, 120),
-            nn.Linear(120, 84),
-            nn.Linear(84, num_classes),
+            nn.Linear(16 * 5 * 5 * in_channels, 120 * in_channels),
+            nn.Linear(120 * in_channels, 84 * in_channels),
+            nn.Linear(84 * in_channels, num_classes),
         )
 
     def forward(self, x):
@@ -123,6 +129,7 @@ class LeNet5(nn.Module):
         logits = self.classifier(x)
         probas = F.softmax(logits, dim=1)
         return logits, probas
+
 
 torch.manual_seed(RANDOM_SEED)
 
@@ -180,21 +187,21 @@ for epoch in range(NUM_EPOCHS):
 
 print('Total Training Time: %.2f min' % ((time.time() - start_time) / 60))
 
+
 with torch.set_grad_enabled(False): # save memory during inference
     print('Test accuracy: %.2f%%' % (compute_accuracy(model, test_loader, device=DEVICE)))
 
-for batch_idx, (features, targets) in enumerate(test_loader):
-    features = features
-    targets = targets
-    break
 
-nhwc_img = np.transpose(features[0], axes=(1, 2, 0))
-nhw_img = np.squeeze(nhwc_img.numpy(), axis=2)
-plt.imshow(nhw_img, cmap='Greys');
 
-model.eval()
-logits, probas = model(features.to(device)[0, None])
-print('Probability 7 %.2f%%' % (probas[0][7]*100))
+
+
+
+
+
+
+
+
+
 
 
 

@@ -64,6 +64,7 @@ for images, labels in train_loader:
 ##########################
 
 
+
 class ConvNet(torch.nn.Module):
 
     def __init__(self, num_classes):

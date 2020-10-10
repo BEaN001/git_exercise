@@ -32,6 +32,7 @@ tk = "^0.1.0"
 tensorboardX = "^2.1"
 graphviz = "0.9"
 mlxtend = "^0.17.3"
+torchsummary = "^1.5.1"
 
 [tool.poetry.dev-dependencies]
 

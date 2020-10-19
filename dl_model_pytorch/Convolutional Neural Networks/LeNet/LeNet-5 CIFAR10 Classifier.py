@@ -34,7 +34,8 @@ NUM_FEATURES = 32*32
 NUM_CLASSES = 10
 
 # Other
-DEVICE = "cuda:0"
+# DEVICE = "cuda:0"
+DEVICE = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 GRAYSCALE = False
 
 ##########################

@@ -34,7 +34,8 @@ NUM_EPOCHS = 40
 NUM_CLASSES = 10
 
 # Other
-DEVICE = "cuda:0"
+# DEVICE = "cuda:0"
+DEVICE = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 
 train_indices = torch.arange(0, 48000)
 valid_indices = torch.arange(48000, 50000)

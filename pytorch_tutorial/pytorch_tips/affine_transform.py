@@ -6,7 +6,7 @@ import skimage.transform as trans
 import numpy as np
 
 def blog_test():
-    img = cv2.imread('/Users/binyu/Documents/git_exercise/computer_vision/datas/mouth/0/1neutral.jpg')
+    img = cv2.imread('/Users/binyu/Documents/git_exercise/computer_vision/algo_datas/mouth/0/1neutral.jpg')
     out_h = img.shape[0]
     out_w = img.shape[1]
     img = np.moveaxis(img, -1, 0)

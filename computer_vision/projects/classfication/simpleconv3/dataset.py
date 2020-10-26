@@ -17,7 +17,7 @@ class ImageData:
         # 读取图片
         self.read_txt_file()
         self.dataset_size = len(self.labels)
-        print("num of train datas=", self.dataset_size)
+        print("num of train algo_datas=", self.dataset_size)
         # 转换成tensor
         self.img_paths = convert_to_tensor(self.img_path, dtype=dtypes.string, name="image_paths")
         self.labels = convert_to_tensor(self.labels, dtype=dtypes.int32, name="labels")

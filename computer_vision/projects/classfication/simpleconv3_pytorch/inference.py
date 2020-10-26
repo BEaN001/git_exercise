@@ -23,7 +23,7 @@ net.eval()
 modelpath = "/Users/binyu/Documents/git_exercise/computer_vision/projects/classfication/simpleconv3_pytorch/models/model.ckpt"
 net.load_state_dict(torch.load(modelpath,map_location=lambda storage,loc: storage))
 
-imagepath = "/Users/binyu/Documents/git_exercise/computer_vision/datas/mouth/1/1smile.jpg"
+imagepath = "/Users/binyu/Documents/git_exercise/computer_vision/algo_datas/mouth/1/1smile.jpg"
 image = Image.open(imagepath)
 imgblob = data_transforms(image).unsqueeze(0)
 imgblob = Variable(imgblob)

@@ -135,7 +135,7 @@ log/
 models/
 MNIST_data/
 mnist/
-datas/
+#computer_vision/algo_datas/
 runs/
 checkpoints/
 logs/

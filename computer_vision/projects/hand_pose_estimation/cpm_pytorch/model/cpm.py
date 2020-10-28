@@ -203,14 +203,14 @@ class CPM(nn.Module):
 
         return x
 
-    def forward(self, image, center_map):
+    def forward(self, image, center_map):  # torch.Size([2, 3, 368, 368]), torch.Size([2, 368, 368])
         assert tuple(image.data.shape[-2:]) == (self.img_h, self.img_w)
-        pool_center_lower_map = self.pool_center_lower(center_map)
-        pool_center_lower_map = pool_center_lower_map.unsqueeze(1)
+        pool_center_lower_map = self.pool_center_lower(center_map) # torch.Size([2, 45, 45])
+        pool_center_lower_map = pool_center_lower_map.unsqueeze(1) # torch.Size([2, 1, 45, 45])
 
-        conv7_stage1_map = self._stage1(image)  # result of stage 1
+        conv7_stage1_map = self._stage1(image)  # result of stage 1 torch.Size([2, 21, 45, 45])
 
-        pool3_stage2_map = self._middle(image)  #
+        pool3_stage2_map = self._middle(image)  # torch.Size([2, 128, 45, 45])
 
         Mconv5_stage2_map = self._stage2(pool3_stage2_map, conv7_stage1_map,
                                          pool_center_lower_map)  # result of stage 2

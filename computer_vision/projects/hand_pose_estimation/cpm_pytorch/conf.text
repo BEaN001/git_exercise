@@ -1,0 +1,28 @@
+[data]
+train_data_dir  = /Users/binyu/Documents/git_exercise/computer_vision/algo_datas/CMUHand/algodata/
+train_label_dir = /Users/binyu/Documents/git_exercise/computer_vision/algo_datas/CMUHand/label/
+save_dir        = ckpt/
+
+test_data_dir  = /Users/binyu/Documents/git_exercise/computer_vision/algo_datas/UCIHand/algodata/
+test_label_dir = /Users/binyu/Documents/git_exercise/computer_vision/algo_datas/UCIHand/label/
+
+
+[training]
+learning_rate   = 8e-6
+batch_size      = 16
+epochs          = 50
+begin_epoch     = 0
+
+
+[test]
+best_model       =30
+predict_label_dir = save/test_label
+predict_labels_dir = save/test_labels
+pck_save_dir    = save/test_pck.csv
+
+
+[predict]
+best_model       =30
+predict_data_dir = /Users/binyu/Documents/git_exercise/computer_vision/projects/hand_pose_estimation/cpm_pytorch/Tdata/crop_img
+predict_label_dir = /Users/binyu/Documents/git_exercise/computer_vision/projects/hand_pose_estimation/cpm_pytorch/Tdata/predict_label
+predict_labels_dir = /Users/binyu/Documents/git_exercise/computer_vision/projects/hand_pose_estimation/cpm_pytorch/Tdata/predict_labels

@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_48/model/trained_model.ckpt"
+all_model_checkpoint_paths: "/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_48/model/trained_model.ckpt"

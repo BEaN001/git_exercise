@@ -1,0 +1,9 @@
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/0 1 0.09 0.10 -0.06 -0.04
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/1 1 -0.06 -0.17 0.04 -0.05
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/2 1 -0.17 -0.17 -0.03 -0.02
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/3 1 -0.13 -0.01 0.02 0.15
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/4 1 -0.04 -0.11 0.03 -0.03
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/5 1 -0.03 -0.00 0.20 0.24
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/6 1 -0.10 0.07 -0.20 -0.01
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/7 1 -0.01 -0.07 0.08 0.03
+/Users/binyu/Documents/git_exercise/computer_vision/projects/human_detection/objectdetection_data/native_12/positive/8 1 -0.07 -0.17 -0.05 -0.14

@@ -107,10 +107,10 @@ def detect_human(img, minsize, pnet, rnet, onet, threshold, factor):
     # img11 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     # rectangles = total_boxes
     # for i in range(rectangles.shape[0]):
-    # cv2.rectangle(img11, (int(rectangles[i][0]),int(rectangles[i][1])),
-    # (int(rectangles[i][2]),int(rectangles[i][3])), [0, 0, 255], 2)
-    ##cv2.putText(img11,'%.2f'%rectangles[i][4] ,(int(rectangles[i][0]),int(rectangles[i][1])),cv2.FONT_HERSHEY_SIMPLEX, 1,(255,0,0),2,cv2.LINE_AA)
-
+    #     cv2.rectangle(img11, (int(rectangles[i][0]),int(rectangles[i][1])),
+    #     (int(rectangles[i][2]),int(rectangles[i][3])), [0, 0, 255], 2)
+    #     cv2.putText(img11,'%.2f'%rectangles[i][4] ,(int(rectangles[i][0]),int(rectangles[i][1])),cv2.FONT_HERSHEY_SIMPLEX, 1,(255,0,0),2,cv2.LINE_AA)
+    #
     # plt.imshow(img11)
     # plt.show()
 

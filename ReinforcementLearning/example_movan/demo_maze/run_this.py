@@ -8,8 +8,8 @@ This script is the main part which controls the update method of this example.
 The RL is in RL_brain.py.
 """
 
-from .maze_env import Maze
-from .RL_brain import QLearningTable
+from ReinforcementLearning.example_movan.demo_maze.maze_env import Maze
+from ReinforcementLearning.example_movan.demo_maze.RL_brain import QLearningTable
 
 
 def update():

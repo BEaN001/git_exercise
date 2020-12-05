@@ -9,7 +9,7 @@ test_label_dir = /Users/binyu/Documents/git_exercise/computer_vision/algo_datas/
 
 [training]
 learning_rate   = 8e-6
-batch_size      = 16
+batch_size      = 1
 epochs          = 50
 begin_epoch     = 0
 

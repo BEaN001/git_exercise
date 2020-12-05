@@ -37,6 +37,9 @@ torchtext = "0.3.1"
 spacy = "^2.3.2"
 imageio = "^2.9.0"
 ConfigParser = "^5.0.1"
+fire = "^0.3.1"
+visdom = "^0.1.8"
+torchnet = "^0.0.4"
 
 [tool.poetry.dev-dependencies]
 

@@ -1,40 +1,39 @@
 [[package]]
-category = "main"
-description = "Abseil Python Common Libraries, see https://github.com/abseil/abseil-py."
 name = "absl-py"
+version = "0.9.0"
+description = "Abseil Python Common Libraries, see https://github.com/abseil/abseil-py."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.9.0"
 
 [package.dependencies]
 six = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Disable App Nap on OS X 10.9"
-marker = "sys_platform == \"darwin\" or platform_system == \"Darwin\" or python_version >= \"3.3\" and sys_platform == \"darwin\""
 name = "appnope"
+version = "0.1.0"
+description = "Disable App Nap on OS X 10.9"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.1.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Classes Without Boilerplate"
 name = "attrs"
+version = "19.3.0"
+description = "Classes Without Boilerplate"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "19.3.0"
 
 [package.extras]
 azure-pipelines = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "pytest-azurepipelines"]
@@ -43,43 +42,43 @@ docs = ["sphinx", "zope.interface"]
 tests = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Specifications for callback functions passed in to an API"
 name = "backcall"
-optional = false
-python-versions = "*"
 version = "0.1.0"
+description = "Specifications for callback functions passed in to an API"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Backport of new features in Python's weakref module"
 name = "backports.weakref"
+version = "1.0.post1"
+description = "Backport of new features in Python's weakref module"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.0.post1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Screen-scraping library"
 name = "beautifulsoup4"
+version = "4.9.0"
+description = "Screen-scraping library"
+category = "main"
 optional = false
 python-versions = "*"
-version = "4.9.0"
 
 [package.dependencies]
 soupsieve = ">1.2"
@@ -89,248 +88,262 @@ html5lib = ["html5lib"]
 lxml = ["lxml"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "An easy whitelist-based HTML-sanitizing tool."
 name = "bleach"
+version = "1.5.0"
+description = "An easy whitelist-based HTML-sanitizing tool."
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.5.0"
 
 [package.dependencies]
 html5lib = ">=0.999,<0.9999 || >0.9999,<0.99999 || >0.99999,<0.99999999"
 six = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "The Blis BLAS-like linear algebra library, as a self-contained C-extension."
 name = "blis"
+version = "0.4.1"
+description = "The Blis BLAS-like linear algebra library, as a self-contained C-extension."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.4.1"
 
 [package.dependencies]
 numpy = ">=1.15.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Super lightweight function registries for your library"
 name = "catalogue"
+version = "1.0.0"
+description = "Super lightweight function registries for your library"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
-version = "1.0.0"
 
 [package.dependencies]
-[package.dependencies.importlib-metadata]
-python = "<3.8"
-version = ">=0.20"
+importlib-metadata = {version = ">=0.20", markers = "python_version < \"3.8\""}
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python package for providing Mozilla's CA Bundle."
 name = "certifi"
-optional = false
-python-versions = "*"
 version = "2020.6.20"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Universal encoding detector for Python 2 and 3"
 name = "chardet"
-optional = false
-python-versions = "*"
 version = "3.0.4"
-
-[package.source]
-reference = 'aliyun'
-type = "legacy"
-url = "https://mirrors.aliyun.com/pypi/simple"
-
-[[package]]
+description = "Universal encoding detector for Python 2 and 3"
 category = "main"
-description = "Extended pickling support for Python objects"
-name = "cloudpickle"
 optional = false
 python-versions = "*"
-version = "1.3.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "cloudpickle"
+version = "1.3.0"
+description = "Extended pickling support for Python objects"
 category = "main"
-description = "Cross-platform colored terminal text."
-marker = "python_version >= \"3.3\" and sys_platform == \"win32\" or sys_platform == \"win32\""
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "colorama"
+version = "0.4.3"
+description = "Cross-platform colored terminal text."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "0.4.3"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Updated configparser from Python 3.8 for Python 2.6+."
 name = "configparser"
+version = "5.0.1"
+description = "Updated configparser from Python 3.8 for Python 2.6+."
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "5.0.1"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "pytest-black (>=0.3.7)", "pytest-mypy"]
+testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Composable style cycles"
 name = "cycler"
+version = "0.10.0"
+description = "Composable style cycles"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.10.0"
 
 [package.dependencies]
 six = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Manage calls to calloc/free through Cython"
 name = "cymem"
+version = "2.0.3"
+description = "Manage calls to calloc/free through Cython"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.0.3"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Decorators for Humans"
 name = "decorator"
+version = "4.4.2"
+description = "Decorators for Humans"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*"
-version = "4.4.2"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "XML bomb protection for Python stdlib modules"
 name = "defusedxml"
+version = "0.6.0"
+description = "XML bomb protection for Python stdlib modules"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "0.6.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Dijkstra/A*"
 name = "dijkstar"
+version = "2.5.0"
+description = "Dijkstra/A*"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.5.0"
 
 [package.extras]
 dev = ["coverage", "flake8", "tox"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Discover and load entry points from installed packages."
 name = "entrypoints"
+version = "0.3"
+description = "Discover and load entry points from installed packages."
+category = "main"
 optional = false
 python-versions = ">=2.7"
-version = "0.3"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7, 2.6, 2.5, and 2.4"
 name = "enum34"
+version = "1.1.10"
+description = "Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7, 2.6, 2.5, and 2.4"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.1.10"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "fire"
+version = "0.3.1"
+description = "A library for automatically generating command line interfaces."
 category = "main"
-description = "Clean single-source support for Python 3 and 2"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = "*"
+termcolor = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "future"
+version = "0.18.2"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "0.18.2"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Simple Python interface for Graphviz"
 name = "graphviz"
+version = "0.9"
+description = "Simple Python interface for Graphviz"
+category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
-version = "0.9"
 
 [package.extras]
 dev = ["tox (>=3.0)", "flake8", "pep8-naming", "wheel", "twine"]
@@ -338,17 +351,17 @@ docs = ["sphinx (>=1.3)", "sphinx-rtd-theme"]
 test = ["mock (>=2)", "pytest (>=3.4)", "pytest-mock (>=1.8)", "pytest-cov"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "The OpenAI Gym: A toolkit for developing and comparing your reinforcement learning agents."
 name = "gym"
+version = "0.17.2"
+description = "The OpenAI Gym: A toolkit for developing and comparing your reinforcement learning agents."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "0.17.2"
 
 [package.dependencies]
 cloudpickle = ">=1.2.0,<1.4.0"
@@ -364,46 +377,46 @@ mujoco = ["mujoco_py (>=1.50,<2.0)", "imageio"]
 robotics = ["mujoco_py (>=1.50,<2.0)", "imageio"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "HTML parser based on the WHATWG HTML specification"
 name = "html5lib"
+version = "0.9999999"
+description = "HTML parser based on the WHATWG HTML specification"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.9999999"
 
 [package.dependencies]
 six = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Internationalized Domain Names in Applications (IDNA)"
 name = "idna"
+version = "2.10"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "2.10"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Library for reading and writing a wide range of image, video, scientific, and volumetric data formats."
 name = "imageio"
+version = "2.9.0"
+description = "Library for reading and writing a wide range of image, video, scientific, and volumetric data formats."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "2.9.0"
 
 [package.dependencies]
 numpy = "*"
@@ -417,18 +430,17 @@ gdal = ["gdal"]
 itk = ["itk"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Read metadata from Python packages"
-marker = "python_version < \"3.8\""
 name = "importlib-metadata"
+version = "1.5.0"
+description = "Read metadata from Python packages"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
-version = "1.5.0"
 
 [package.dependencies]
 zipp = ">=0.5"
@@ -438,20 +450,20 @@ docs = ["sphinx", "rst.linker"]
 testing = ["packaging", "importlib-resources"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "IPython Kernel for Jupyter"
 name = "ipykernel"
+version = "5.1.4"
+description = "IPython Kernel for Jupyter"
+category = "main"
 optional = false
 python-versions = ">=3.4"
-version = "5.1.4"
 
 [package.dependencies]
-appnope = "*"
+appnope = {version = "*", markers = "platform_system == \"Darwin\""}
 ipython = ">=5.0.0"
 jupyter-client = "*"
 tornado = ">=4.2"
@@ -461,29 +473,28 @@ traitlets = ">=4.1.0"
 test = ["pytest", "pytest-cov", "flaky", "nose"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "IPython: Productive Interactive Computing"
 name = "ipython"
+version = "7.13.0"
+description = "IPython: Productive Interactive Computing"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "7.13.0"
 
 [package.dependencies]
-appnope = "*"
+appnope = {version = "*", markers = "sys_platform == \"darwin\""}
 backcall = "*"
-colorama = "*"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
 decorator = "*"
 jedi = ">=0.10"
-pexpect = "*"
+pexpect = {version = "*", markers = "sys_platform != \"win32\""}
 pickleshare = "*"
 prompt-toolkit = ">=2.0.0,<3.0.0 || >3.0.0,<3.0.1 || >3.0.1,<3.1.0"
 pygments = "*"
-setuptools = ">=18.5"
 traitlets = ">=4.2"
 
 [package.extras]
@@ -498,76 +509,73 @@ qtconsole = ["qtconsole"]
 test = ["nose (>=0.10.1)", "requests", "testpath", "pygments", "nbformat", "ipykernel", "numpy (>=1.14)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Vestigial utilities from IPython"
 name = "ipython-genutils"
+version = "0.2.0"
+description = "Vestigial utilities from IPython"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.2.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "IPython HTML widgets for Jupyter"
 name = "ipywidgets"
+version = "7.5.1"
+description = "IPython HTML widgets for Jupyter"
+category = "main"
 optional = false
 python-versions = "*"
-version = "7.5.1"
 
 [package.dependencies]
 ipykernel = ">=4.5.1"
+ipython = {version = ">=4.0.0", markers = "python_version >= \"3.3\""}
 nbformat = ">=4.2.0"
 traitlets = ">=4.3.1"
 widgetsnbextension = ">=3.5.0,<3.6.0"
-
-[package.dependencies.ipython]
-python = ">=3.3"
-version = ">=4.0.0"
 
 [package.extras]
 test = ["pytest (>=3.6.0)", "pytest-cov", "mock"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "An autocompletion tool for Python that can be used for text editors."
 name = "jedi"
+version = "0.16.0"
+description = "An autocompletion tool for Python that can be used for text editors."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "0.16.0"
 
 [package.dependencies]
 parso = ">=0.5.2"
 
 [package.extras]
-qa = ["flake8 (3.7.9)"]
-testing = ["colorama (0.4.1)", "docopt", "pytest (>=3.9.0,<5.0.0)"]
+qa = ["flake8 (==3.7.9)"]
+testing = ["colorama (==0.4.1)", "docopt", "pytest (>=3.9.0,<5.0.0)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "A very fast and expressive template engine."
 name = "jinja2"
+version = "2.11.1"
+description = "A very fast and expressive template engine."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "2.11.1"
 
 [package.dependencies]
 MarkupSafe = ">=0.23"
@@ -576,57 +584,82 @@ MarkupSafe = ">=0.23"
 i18n = ["Babel (>=0.8)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Lightweight pipelining: using Python functions as pipeline jobs."
 name = "joblib"
+version = "0.14.1"
+description = "Lightweight pipelining: using Python functions as pipeline jobs."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.14.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "jsonpatch"
+version = "1.27"
+description = "Apply JSON-Patches (RFC 6902)"
 category = "main"
-description = "An implementation of JSON Schema validation for Python"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+jsonpointer = ">=1.9"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
+name = "jsonpointer"
+version = "2.0"
+description = "Identify specific nodes in a JSON document (RFC 6901)"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "jsonschema"
+version = "3.2.0"
+description = "An implementation of JSON Schema validation for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.2.0"
 
 [package.dependencies]
 attrs = ">=17.4.0"
+importlib-metadata = {version = "*", markers = "python_version < \"3.8\""}
 pyrsistent = ">=0.14.0"
-setuptools = "*"
 six = ">=1.11.0"
-
-[package.dependencies.importlib-metadata]
-python = "<3.8"
-version = "*"
 
 [package.extras]
 format = ["idna", "jsonpointer (>1.13)", "rfc3987", "strict-rfc3339", "webcolors"]
 format_nongpl = ["idna", "jsonpointer (>1.13)", "webcolors", "rfc3986-validator (>0.1.0)", "rfc3339-validator"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Jupyter metapackage. Install all the Jupyter components in one go."
 name = "jupyter"
+version = "1.0.0"
+description = "Jupyter metapackage. Install all the Jupyter components in one go."
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.0.0"
 
 [package.dependencies]
 ipykernel = "*"
@@ -637,17 +670,17 @@ notebook = "*"
 qtconsole = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Jupyter protocol implementation and client libraries"
 name = "jupyter-client"
+version = "6.0.0"
+description = "Jupyter protocol implementation and client libraries"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "6.0.0"
 
 [package.dependencies]
 jupyter-core = ">=4.6.0"
@@ -660,17 +693,17 @@ traitlets = "*"
 test = ["ipykernel", "ipython", "mock", "pytest"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Jupyter terminal console"
 name = "jupyter-console"
+version = "6.1.0"
+description = "Jupyter terminal console"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "6.1.0"
 
 [package.dependencies]
 ipykernel = "*"
@@ -683,50 +716,47 @@ pygments = "*"
 test = ["pexpect"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Jupyter core package. A base package on which Jupyter projects rely."
 name = "jupyter-core"
+version = "4.6.3"
+description = "Jupyter core package. A base package on which Jupyter projects rely."
+category = "main"
 optional = false
 python-versions = "!=3.0,!=3.1,!=3.2,!=3.3,!=3.4,>=2.7"
-version = "4.6.3"
 
 [package.dependencies]
-pywin32 = ">=1.0"
+pywin32 = {version = ">=1.0", markers = "sys_platform == \"win32\""}
 traitlets = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "A fast implementation of the Cassowary constraint solver"
 name = "kiwisolver"
+version = "1.1.0"
+description = "A fast implementation of the Cassowary constraint solver"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "1.1.0"
-
-[package.dependencies]
-setuptools = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
 name = "lxml"
+version = "4.5.0"
+description = "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, != 3.4.*"
-version = "4.5.0"
 
 [package.extras]
 cssselect = ["cssselect (>=0.7)"]
@@ -735,49 +765,46 @@ htmlsoup = ["beautifulsoup4"]
 source = ["Cython (>=0.29.7)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python implementation of Markdown."
 name = "markdown"
+version = "3.2.1"
+description = "Python implementation of Markdown."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "3.2.1"
-
-[package.dependencies]
-setuptools = ">=36"
 
 [package.extras]
 testing = ["coverage", "pyyaml"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Safely add untrusted strings to HTML/XML markup."
 name = "markupsafe"
+version = "1.1.1"
+description = "Safely add untrusted strings to HTML/XML markup."
+category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
-version = "1.1.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python plotting package"
 name = "matplotlib"
+version = "3.2.0"
+description = "Python plotting package"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "3.2.0"
 
 [package.dependencies]
 cycler = ">=0.10"
@@ -787,30 +814,30 @@ pyparsing = ">=2.0.1,<2.0.4 || >2.0.4,<2.1.2 || >2.1.2,<2.1.6 || >2.1.6"
 python-dateutil = ">=2.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "The fastest markdown parser in pure Python"
 name = "mistune"
+version = "0.8.4"
+description = "The fastest markdown parser in pure Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.8.4"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Machine Learning Library Extensions"
 name = "mlxtend"
+version = "0.17.3"
+description = "Machine Learning Library Extensions"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.17.3"
 
 [package.dependencies]
 joblib = ">=0.13.2"
@@ -819,24 +846,23 @@ numpy = ">=1.16.2"
 pandas = ">=0.24.2"
 scikit-learn = ">=0.20.3"
 scipy = ">=1.2.1"
-setuptools = "*"
 
 [package.extras]
 docs = ["mkdocs"]
 testing = ["pytest"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Rolling backport of unittest.mock for all Pythons"
 name = "mock"
+version = "4.0.2"
+description = "Rolling backport of unittest.mock for all Pythons"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "4.0.2"
 
 [package.extras]
 build = ["twine", "wheel", "blurb"]
@@ -844,30 +870,30 @@ docs = ["sphinx"]
 test = ["pytest", "pytest-cov"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Cython bindings for MurmurHash"
 name = "murmurhash"
+version = "1.0.2"
+description = "Cython bindings for MurmurHash"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.0.2"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Converting Jupyter Notebooks"
 name = "nbconvert"
+version = "5.6.1"
+description = "Converting Jupyter Notebooks"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "5.6.1"
 
 [package.dependencies]
 bleach = "*"
@@ -890,17 +916,17 @@ serve = ["tornado (>=4.0)"]
 test = ["pytest", "pytest-cov", "ipykernel", "jupyter-client (>=5.3.1)", "ipywidgets (>=7)", "pebble", "mock"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "The Jupyter Notebook format"
 name = "nbformat"
+version = "5.0.4"
+description = "The Jupyter Notebook format"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "5.0.4"
 
 [package.dependencies]
 ipython-genutils = "*"
@@ -912,20 +938,19 @@ traitlets = ">=4.1"
 test = ["testpath", "pytest", "pytest-cov"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "A web-based notebook environment for interactive computing"
 name = "notebook"
+version = "6.0.3"
+description = "A web-based notebook environment for interactive computing"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "6.0.3"
 
 [package.dependencies]
-Send2Trash = "*"
 ipykernel = "*"
 ipython-genutils = "*"
 jinja2 = "*"
@@ -935,6 +960,7 @@ nbconvert = "*"
 nbformat = "*"
 prometheus-client = "*"
 pyzmq = ">=17"
+Send2Trash = "*"
 terminado = ">=0.8.1"
 tornado = ">=5.0"
 traitlets = ">=4.2.1"
@@ -943,62 +969,62 @@ traitlets = ">=4.2.1"
 test = ["nose", "coverage", "requests", "nose-warnings-filters", "nbval", "nose-exclude", "selenium", "pytest", "pytest-cov", "nose-exclude"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "NumPy is the fundamental package for array computing with Python."
 name = "numpy"
+version = "1.18.1"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "1.18.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Wrapper package for OpenCV python bindings."
 name = "opencv-contrib-python"
-optional = false
-python-versions = "*"
 version = "4.1.0.25"
-
-[package.dependencies]
-numpy = ">=1.11.1"
-
-[package.source]
-reference = 'aliyun'
-type = "legacy"
-url = "https://mirrors.aliyun.com/pypi/simple"
-
-[[package]]
-category = "main"
 description = "Wrapper package for OpenCV python bindings."
-name = "opencv-python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "4.1.0.25"
 
 [package.dependencies]
 numpy = ">=1.11.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "opencv-python"
+version = "4.1.0.25"
+description = "Wrapper package for OpenCV python bindings."
 category = "main"
-description = "Powerful data structures for data analysis, time series, and statistics"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = ">=1.11.1"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "pandas"
+version = "0.25.3"
+description = "Powerful data structures for data analysis, time series, and statistics"
+category = "main"
 optional = false
 python-versions = ">=3.5.3"
-version = "0.25.3"
 
 [package.dependencies]
 numpy = ">=1.13.3"
@@ -1009,339 +1035,334 @@ pytz = ">=2017.2"
 test = ["pytest (>=4.0.2)", "pytest-xdist", "hypothesis (>=3.58)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Utilities for writing pandoc filters in python"
 name = "pandocfilters"
+version = "1.4.2"
+description = "Utilities for writing pandoc filters in python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.4.2"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "A Python Parser"
 name = "parso"
+version = "0.6.2"
+description = "A Python Parser"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "0.6.2"
 
 [package.extras]
 testing = ["docopt", "pytest (>=3.0.7)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Pexpect allows easy control of interactive console applications."
-marker = "python_version >= \"3.3\" and sys_platform != \"win32\" or sys_platform != \"win32\""
 name = "pexpect"
+version = "4.8.0"
+description = "Pexpect allows easy control of interactive console applications."
+category = "main"
 optional = false
 python-versions = "*"
-version = "4.8.0"
 
 [package.dependencies]
 ptyprocess = ">=0.5"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Tiny 'shelve'-like database with concurrency support"
 name = "pickleshare"
+version = "0.7.5"
+description = "Tiny 'shelve'-like database with concurrency support"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.7.5"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python Imaging Library (Fork)"
 name = "pillow"
+version = "7.0.0"
+description = "Python Imaging Library (Fork)"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "7.0.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "The smartest command line arguments parser in the world"
 name = "plac"
+version = "1.1.3"
+description = "The smartest command line arguments parser in the world"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.1.3"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Cython hash table that trusts the keys are pre-hashed"
 name = "preshed"
+version = "3.0.2"
+description = "Cython hash table that trusts the keys are pre-hashed"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.2"
 
 [package.dependencies]
 cymem = ">=2.0.2,<2.1.0"
 murmurhash = ">=0.28.0,<1.1.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python client for the Prometheus monitoring system."
 name = "prometheus-client"
+version = "0.7.1"
+description = "Python client for the Prometheus monitoring system."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.7.1"
 
 [package.extras]
 twisted = ["twisted"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Library for building powerful interactive command lines in Python"
 name = "prompt-toolkit"
+version = "3.0.3"
+description = "Library for building powerful interactive command lines in Python"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "3.0.3"
 
 [package.dependencies]
 wcwidth = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Protocol Buffers"
 name = "protobuf"
+version = "3.11.3"
+description = "Protocol Buffers"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.11.3"
 
 [package.dependencies]
-setuptools = "*"
 six = ">=1.9"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Run a subprocess in a pseudo terminal"
-marker = "sys_platform != \"win32\" or os_name != \"nt\" or python_version >= \"3.3\" and sys_platform != \"win32\""
 name = "ptyprocess"
+version = "0.6.0"
+description = "Run a subprocess in a pseudo terminal"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.6.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Cross-platform windowing and multimedia library"
 name = "pyglet"
+version = "1.5.0"
+description = "Cross-platform windowing and multimedia library"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.5.0"
 
 [package.dependencies]
 future = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Pygments is a syntax highlighting package written in Python."
 name = "pygments"
+version = "2.6.1"
+description = "Pygments is a syntax highlighting package written in Python."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "2.6.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python parsing module"
 name = "pyparsing"
+version = "2.4.6"
+description = "Python parsing module"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "2.4.6"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python bindings for the Qt cross platform application toolkit"
 name = "pyqt5"
+version = "5.14.1"
+description = "Python bindings for the Qt cross platform application toolkit"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "5.14.1"
 
 [package.dependencies]
 PyQt5-sip = ">=12.7,<13"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "The sip module support for PyQt5"
 name = "pyqt5-sip"
+version = "12.7.1"
+description = "The sip module support for PyQt5"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "12.7.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Persistent/Functional/Immutable data structures"
 name = "pyrsistent"
+version = "0.15.7"
+description = "Persistent/Functional/Immutable data structures"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.15.7"
 
 [package.dependencies]
 six = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Extensions to the standard Python datetime module"
 name = "python-dateutil"
+version = "2.8.1"
+description = "Extensions to the standard Python datetime module"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
-version = "2.8.1"
 
 [package.dependencies]
 six = ">=1.5"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "World timezone definitions, modern and historical"
 name = "pytz"
-optional = false
-python-versions = "*"
 version = "2020.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python for Window Extensions"
-marker = "sys_platform == \"win32\""
 name = "pywin32"
-optional = false
-python-versions = "*"
 version = "227"
-
-[package.source]
-reference = 'aliyun'
-type = "legacy"
-url = "https://mirrors.aliyun.com/pypi/simple"
-
-[[package]]
+description = "Python for Window Extensions"
 category = "main"
-description = "Python bindings for the winpty library"
-marker = "os_name == \"nt\""
-name = "pywinpty"
 optional = false
 python-versions = "*"
-version = "0.5.7"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "pywinpty"
+version = "0.5.7"
+description = "Python bindings for the winpty library"
 category = "main"
-description = "Python bindings for 0MQ"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "pyzmq"
+version = "19.0.0"
+description = "Python bindings for 0MQ"
+category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
-version = "19.0.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Jupyter Qt console"
 name = "qtconsole"
+version = "4.7.1"
+description = "Jupyter Qt console"
+category = "main"
 optional = false
 python-versions = "*"
-version = "4.7.1"
 
 [package.dependencies]
 ipykernel = ">=4.1"
@@ -1357,30 +1378,30 @@ doc = ["Sphinx (>=1.3)"]
 test = ["pytest", "mock"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Provides an abstraction layer on top of the various Qt bindings (PyQt5, PyQt4 and PySide) and additional custom QWidgets."
 name = "qtpy"
+version = "1.9.0"
+description = "Provides an abstraction layer on top of the various Qt bindings (PyQt5, PyQt4 and PySide) and additional custom QWidgets."
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.9.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python HTTP for Humans."
 name = "requests"
+version = "2.24.0"
+description = "Python HTTP for Humans."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "2.24.0"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
@@ -1390,46 +1411,51 @@ urllib3 = ">=1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26"
 
 [package.extras]
 security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
-socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
+socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "A set of python modules for machine learning and data mining"
 name = "scikit-learn"
-optional = false
-python-versions = "*"
 version = "0.22.2.post1"
-
-[package.source]
-reference = 'aliyun'
-type = "legacy"
-url = "https://mirrors.aliyun.com/pypi/simple"
-
-[[package]]
+description = "A set of python modules for machine learning and data mining"
 category = "main"
-description = "SciPy: Scientific Library for Python"
-name = "scipy"
 optional = false
 python-versions = ">=3.5"
-version = "1.4.1"
+
+[package.dependencies]
+joblib = ">=0.11"
+numpy = ">=1.11.0"
+scipy = ">=0.17.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "scipy"
+version = "1.4.1"
+description = "SciPy: Scientific Library for Python"
 category = "main"
-description = "seaborn: statistical data visualization"
+optional = false
+python-versions = ">=3.5"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "seaborn"
+version = "0.10.1"
+description = "seaborn: statistical data visualization"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "0.10.1"
 
 [package.dependencies]
 matplotlib = ">=2.1.2"
@@ -1438,72 +1464,72 @@ pandas = ">=0.22.0"
 scipy = ">=1.0.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Send file to trash natively under Mac OS X, Windows and Linux."
 name = "send2trash"
+version = "1.5.0"
+description = "Send file to trash natively under Mac OS X, Windows and Linux."
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.5.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Python 2 and 3 compatibility utilities"
 name = "six"
+version = "1.14.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "1.14.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "A set of python modules for machine learning and data mining"
 name = "sklearn"
+version = "0.0"
+description = "A set of python modules for machine learning and data mining"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.0"
 
 [package.dependencies]
 scikit-learn = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "A modern CSS selector implementation for Beautiful Soup."
 name = "soupsieve"
+version = "2.0"
+description = "A modern CSS selector implementation for Beautiful Soup."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "2.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Industrial-strength Natural Language Processing (NLP) in Python"
 name = "spacy"
+version = "2.3.2"
+description = "Industrial-strength Natural Language Processing (NLP) in Python"
+category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
-version = "2.3.2"
 
 [package.dependencies]
 blis = ">=0.4.0,<0.5.0"
@@ -1514,7 +1540,6 @@ numpy = ">=1.15.0"
 plac = ">=0.9.6,<1.2.0"
 preshed = ">=3.0.2,<3.1.0"
 requests = ">=2.13.0,<3.0.0"
-setuptools = "*"
 srsly = ">=1.0.2,<1.1.0"
 thinc = "7.4.1"
 tqdm = ">=4.38.0,<5.0.0"
@@ -1530,35 +1555,35 @@ cuda90 = ["cupy-cuda90 (>=5.0.0b4,<9.0.0)"]
 cuda91 = ["cupy-cuda91 (>=5.0.0b4,<9.0.0)"]
 cuda92 = ["cupy-cuda92 (>=5.0.0b4,<9.0.0)"]
 ja = ["sudachipy (>=0.4.5)", "sudachidict_core (>=20200330)"]
-ko = ["natto-py (0.9.0)"]
+ko = ["natto-py (==0.9.0)"]
 lookups = ["spacy_lookups_data (>=0.3.2,<0.4.0)"]
 th = ["pythainlp (>=2.0)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Modern high-performance serialization utilities for Python"
 name = "srsly"
+version = "1.0.2"
+description = "Modern high-performance serialization utilities for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.0.2"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "TensorBoardX lets you watch Tensors Flow without Tensorflow"
 name = "tensorboardx"
+version = "2.1"
+description = "TensorBoardX lets you watch Tensors Flow without Tensorflow"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.1"
 
 [package.dependencies]
 numpy = "*"
@@ -1566,17 +1591,17 @@ protobuf = ">=3.8.0"
 six = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "TensorFlow helps the tensors flow"
 name = "tensorflow"
+version = "1.5.0"
+description = "TensorFlow helps the tensors flow"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.5.0"
 
 [package.dependencies]
 absl-py = ">=0.1.6"
@@ -1587,20 +1612,19 @@ numpy = ">=1.12.1"
 protobuf = ">=3.4.0"
 six = ">=1.10.0"
 tensorflow-tensorboard = ">=1.5.0,<1.6.0"
-wheel = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "TensorBoard lets you watch Tensors Flow"
 name = "tensorflow-tensorboard"
+version = "1.5.1"
+description = "TensorBoard lets you watch Tensors Flow"
+category = "main"
 optional = false
 python-versions = ">= 2.7, != 3.0.*, != 3.1.*"
-version = "1.5.1"
 
 [package.dependencies]
 bleach = "1.5.0"
@@ -1611,56 +1635,65 @@ protobuf = ">=3.4.0"
 six = ">=1.10.0"
 werkzeug = ">=0.11.10"
 
-[package.dependencies.wheel]
-python = ">=3"
-version = ">=0.26"
-
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "termcolor"
+version = "1.1.0"
+description = "ANSII Color formatting for output in terminal."
 category = "main"
-description = "Terminals served to xterm.js using Tornado websockets"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "terminado"
+version = "0.8.3"
+description = "Terminals served to xterm.js using Tornado websockets"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "0.8.3"
 
 [package.dependencies]
-ptyprocess = "*"
-pywinpty = ">=0.5"
+ptyprocess = {version = "*", markers = "os_name != \"nt\""}
+pywinpty = {version = ">=0.5", markers = "os_name == \"nt\""}
 tornado = ">=4"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Test utilities for code working with files and commands"
 name = "testpath"
+version = "0.4.4"
+description = "Test utilities for code working with files and commands"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.4.4"
 
 [package.extras]
 test = ["pathlib2"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Practical Machine Learning for NLP"
 name = "thinc"
+version = "7.4.1"
+description = "Practical Machine Learning for NLP"
+category = "main"
 optional = false
 python-versions = "*"
-version = "7.4.1"
 
 [package.dependencies]
 blis = ">=0.4.0,<0.5.0"
@@ -1684,56 +1717,87 @@ cuda91 = ["cupy-cuda91 (>=5.0.0b4)"]
 cuda92 = ["cupy-cuda92 (>=5.0.0b4)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "TensorKit is a deep learning helper between Python and C++."
 name = "tk"
+version = "0.1.0"
+description = "TensorKit is a deep learning helper between Python and C++."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.1.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
 name = "torch"
+version = "1.4.0"
+description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "1.4.0"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "torchfile"
+version = "0.1.0"
+description = "Torch7 binary serialized file parser"
 category = "main"
-description = "Model summary in PyTorch similar to `model.summary()` in Keras"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
+name = "torchnet"
+version = "0.0.4"
+description = "an abstraction to train neural networks"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = "*"
+torch = "*"
+visdom = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "torchsummary"
+version = "1.5.1"
+description = "Model summary in PyTorch similar to `model.summary()` in Keras"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.5.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Text utilities and datasets for PyTorch"
 name = "torchtext"
+version = "0.3.1"
+description = "Text utilities and datasets for PyTorch"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.3.1"
 
 [package.dependencies]
 numpy = "*"
@@ -1742,17 +1806,17 @@ torch = "*"
 tqdm = "*"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "image and video datasets and models for torch deep learning"
 name = "torchvision"
+version = "0.5.0"
+description = "image and video datasets and models for torch deep learning"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.5.0"
 
 [package.dependencies]
 numpy = "*"
@@ -1764,46 +1828,46 @@ torch = "1.4.0"
 scipy = ["scipy"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
 name = "tornado"
+version = "6.0.4"
+description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
+category = "main"
 optional = false
 python-versions = ">= 3.5"
-version = "6.0.4"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Fast, Extensible Progress Meter"
 name = "tqdm"
+version = "4.50.2"
+description = "Fast, Extensible Progress Meter"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*"
-version = "4.50.2"
 
 [package.extras]
 dev = ["py-make (>=0.1.0)", "twine", "argopt", "pydoc-markdown"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Traitlets Python config system"
 name = "traitlets"
+version = "4.3.3"
+description = "Traitlets Python config system"
+category = "main"
 optional = false
 python-versions = "*"
-version = "4.3.3"
 
 [package.dependencies]
 decorator = "*"
@@ -1814,124 +1878,149 @@ six = "*"
 test = ["pytest", "mock"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
 name = "urllib3"
+version = "1.25.10"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
-version = "1.25.10"
 
 [package.extras]
 brotli = ["brotlipy (>=0.6.0)"]
 secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "pyOpenSSL (>=0.14)", "ipaddress"]
-socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "visdom"
+version = "0.1.8.9"
+description = "A tool for visualizing live, rich data for Torch and Numpy"
 category = "main"
-description = "A lightweight console printing and formatting toolkit"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+jsonpatch = "*"
+numpy = ">=1.8"
+pillow = "*"
+pyzmq = "*"
+requests = "*"
+scipy = "*"
+six = "*"
+torchfile = "*"
+tornado = "*"
+websocket-client = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "wasabi"
-optional = false
-python-versions = "*"
 version = "0.8.0"
-
-[package.source]
-reference = 'aliyun'
-type = "legacy"
-url = "https://mirrors.aliyun.com/pypi/simple"
-
-[[package]]
+description = "A lightweight console printing and formatting toolkit"
 category = "main"
-description = "Measures number of Terminal column cells of wide-character codes"
-name = "wcwidth"
 optional = false
 python-versions = "*"
-version = "0.1.8"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
+name = "wcwidth"
+version = "0.1.8"
+description = "Measures number of Terminal column cells of wide-character codes"
 category = "main"
-description = "The comprehensive WSGI web application library."
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
+name = "websocket-client"
+version = "0.57.0"
+description = "WebSocket client for Python. hybi13 is supported."
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+six = "*"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "werkzeug"
+version = "1.0.1"
+description = "The comprehensive WSGI web application library."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "1.0.1"
 
 [package.extras]
 dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-themes", "sphinx-issues"]
 watchdog = ["watchdog"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
-
-[[package]]
-category = "main"
-description = "A built-package format for Python"
-name = "wheel"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "0.34.2"
-
-[package.extras]
-test = ["pytest (>=3.0.0)", "pytest-cov"]
-
-[package.source]
 reference = 'aliyun'
-type = "legacy"
-url = "https://mirrors.aliyun.com/pypi/simple"
 
 [[package]]
-category = "main"
-description = "IPython HTML widgets for Jupyter"
 name = "widgetsnbextension"
+version = "3.5.1"
+description = "IPython HTML widgets for Jupyter"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.5.1"
 
 [package.dependencies]
 notebook = ">=4.4.1"
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [[package]]
-category = "main"
-description = "Backport of pathlib-compatible object wrapper for zip files"
-marker = "python_version < \"3.8\""
 name = "zipp"
+version = "3.1.0"
+description = "Backport of pathlib-compatible object wrapper for zip files"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "3.1.0"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [package.source]
-reference = 'aliyun'
 type = "legacy"
 url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
 
 [metadata]
-content-hash = "0ea84a687c87231521867da8b37f745841142db5cc2d0e62bfe4e493244522df"
+lock-version = "1.1"
 python-versions = "^3.6"
+content-hash = "5daef1142b53a3d03d1c613b2c1f45037e81b6de0d9fbbc6d5d05447f076dce6"
 
 [metadata.files]
 absl-py = [
@@ -1946,8 +2035,8 @@ attrs = [
     {file = "attrs-19.3.0.tar.gz", hash = "sha256:f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"},
 ]
 backcall = [
-    {file = "backcall-0.1.0.tar.gz", hash = "md5:87ce0c7839808e6a3427d57df6a792e7"},
-    {file = "backcall-0.1.0.zip", hash = "md5:b48eb1ad963b0f6ecae0d90434723614"},
+    {file = "backcall-0.1.0.tar.gz", hash = "sha256:38ecd85be2c1e78f77fd91700c76e14667dc21e2713b63876c0eb901196e01e4"},
+    {file = "backcall-0.1.0.zip", hash = "sha256:bbbf4b1e5cd2bdb08f915895b51081c041bac22394fdfcfdfbe9f14b77c08bf2"},
 ]
 "backports.weakref" = [
     {file = "backports.weakref-1.0.post1-py2.py3-none-any.whl", hash = "md5:a0264576cb0ded29ccfe620fa0db6e94"},
@@ -2042,6 +2131,9 @@ enum34 = [
     {file = "enum34-1.1.10-py3-none-any.whl", hash = "sha256:c3858660960c984d6ab0ebad691265180da2b43f07e061c0f8dca9ef3cffd328"},
     {file = "enum34-1.1.10.tar.gz", hash = "sha256:cce6a7477ed816bd2542d03d53db9f0db935dd013b70f336a95c73979289f248"},
 ]
+fire = [
+    {file = "fire-0.3.1.tar.gz", hash = "sha256:9736a16227c3d469e5d2d296bce5b4d8fa8d7851e953bda327a455fc2994307f"},
+]
 future = [
     {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
 ]
@@ -2053,7 +2145,7 @@ gym = [
     {file = "gym-0.17.2.tar.gz", hash = "sha256:bb495aa56995b01274a2213423bf5ba05b8f4fd51c6dc61e9d4abddd1189718e"},
 ]
 html5lib = [
-    {file = "html5lib-0.9999999.tar.gz", hash = "md5:ef43cb05e9e799f25d65d1135838a96f"},
+    {file = "html5lib-0.9999999.tar.gz", hash = "sha256:2612a191a8d5842bfa057e41ba50bbb9dcb722419d2408c78cff4758d0754868"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
@@ -2094,6 +2186,14 @@ jinja2 = [
 joblib = [
     {file = "joblib-0.14.1-py2.py3-none-any.whl", hash = "sha256:bdb4fd9b72915ffb49fde2229ce482dd7ae79d842ed8c2b4c932441495af1403"},
     {file = "joblib-0.14.1.tar.gz", hash = "sha256:0630eea4f5664c463f23fbf5dcfc54a2bc6168902719fa8e19daf033022786c8"},
+]
+jsonpatch = [
+    {file = "jsonpatch-1.27-py2.py3-none-any.whl", hash = "sha256:86eaaccfac8891c6a09ab48aec13fb5921ff32c838e7a19981f0d2b94915f668"},
+    {file = "jsonpatch-1.27.tar.gz", hash = "sha256:4d08af10d71723b5b2924da6ba90f273a4d1a5c6accfb605eb970cb2f9b29cf9"},
+]
+jsonpointer = [
+    {file = "jsonpointer-2.0-py2.py3-none-any.whl", hash = "md5:55e20882b8e34bb8e47118ee425140e1"},
+    {file = "jsonpointer-2.0.tar.gz", hash = "md5:741b98d0e693b08b5e44e0a9da5a7bb7"},
 ]
 jsonschema = [
     {file = "jsonschema-3.2.0-py2.py3-none-any.whl", hash = "sha256:4e5b3cf8216f577bee9ce139cbe72eca3ea4f292ec60928ff24758ce626cd163"},
@@ -2384,7 +2484,7 @@ pandas = [
     {file = "pandas-0.25.3.tar.gz", hash = "sha256:52da74df8a9c9a103af0a72c9d5fdc8e0183a90884278db7f386b5692a2220a4"},
 ]
 pandocfilters = [
-    {file = "pandocfilters-1.4.2.tar.gz", hash = "md5:dc391791ef54c7de1572d7b46b63361f"},
+    {file = "pandocfilters-1.4.2.tar.gz", hash = "sha256:b3dd70e169bb5449e6bc6ff96aea89c5eea8c5f6ab5e207fc2f521a2cf4a0da9"},
 ]
 parso = [
     {file = "parso-0.6.2-py2.py3-none-any.whl", hash = "sha256:8515fc12cfca6ee3aa59138741fc5624d62340c97e401c74875769948d4f2995"},
@@ -2488,10 +2588,10 @@ pyparsing = [
     {file = "pyparsing-2.4.6.tar.gz", hash = "sha256:4c830582a84fb022400b85429791bc551f1f4871c33f23e44f353119e92f969f"},
 ]
 pyqt5 = [
-    {file = "PyQt5-5.14.1-5.14.0-cp35.cp36.cp37.cp38-abi3-macosx_10_6_intel.whl", hash = "sha256:3d6e315e6e2d6489a2e1e0148d00e784e277c6590c189227d6060f15b9be690a"},
-    {file = "PyQt5-5.14.1-5.14.0-cp35.cp36.cp37.cp38-abi3-manylinux2014_x86_64.whl", hash = "sha256:be10fa95e6bdc9cad616ebf368c51b3f5748138b2b3a600cf7c4f80b78cb9852"},
-    {file = "PyQt5-5.14.1-5.14.0-cp35.cp36.cp37.cp38-none-win32.whl", hash = "sha256:812233bd155735377e2e9c7eea7a28815f357440334db51788d941e2a8b62f64"},
-    {file = "PyQt5-5.14.1-5.14.0-cp35.cp36.cp37.cp38-none-win_amd64.whl", hash = "sha256:2b79209aa6e4688f6ac46e6d2694236dcf91db5f3a87270150d0f82082e3d360"},
+    {file = "PyQt5-5.14.1-5.14.1-cp35.cp36.cp37.cp38-abi3-macosx_10_6_intel.whl", hash = "sha256:a0bfe9fd718bca4de3e33000347e048f73126b6dc46530eb020b0251a638ee9d"},
+    {file = "PyQt5-5.14.1-5.14.1-cp35.cp36.cp37.cp38-abi3-manylinux2014_x86_64.whl", hash = "sha256:713b9a201f5e7b2fca8691373e5d5c8c2552a51d87ca9ffbb1461e34e3241211"},
+    {file = "PyQt5-5.14.1-5.14.1-cp35.cp36.cp37.cp38-none-win32.whl", hash = "sha256:2d94ec761fb656707050c68b41958e3a9f755bb1df96c064470f4096d2899e32"},
+    {file = "PyQt5-5.14.1-5.14.1-cp35.cp36.cp37.cp38-none-win_amd64.whl", hash = "sha256:31b142a868152d60c6323e0527edb692fdf05fd7cb4fe2fe9ce07d1ce560221a"},
     {file = "PyQt5-5.14.1.tar.gz", hash = "sha256:2f230f2dbd767099de7a0cb915abdf0cbc3256a0b5bb910eb09b99117db7a65b"},
 ]
 pyqt5-sip = [
@@ -2643,8 +2743,8 @@ seaborn = [
     {file = "seaborn-0.10.1.tar.gz", hash = "sha256:2d1a0c9d6bd1bc3cadb0364b8f06540f51322a670cf8438d0fde1c1c7317adc0"},
 ]
 send2trash = [
-    {file = "Send2Trash-1.5.0-py3-none-any.whl", hash = "md5:5a9b5dd1d203c8c6d564e9e7e6818328"},
-    {file = "Send2Trash-1.5.0.tar.gz", hash = "md5:eccc3563a305b8cb10001ffd1aa92fa0"},
+    {file = "Send2Trash-1.5.0-py3-none-any.whl", hash = "sha256:f1691922577b6fa12821234aeb57599d887c4900b9ca537948d2dac34aea888b"},
+    {file = "Send2Trash-1.5.0.tar.gz", hash = "sha256:60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2"},
 ]
 six = [
     {file = "six-1.14.0-py2.py3-none-any.whl", hash = "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"},
@@ -2705,6 +2805,9 @@ tensorflow-tensorboard = [
     {file = "tensorflow_tensorboard-1.5.1-py2-none-any.whl", hash = "sha256:47f985cdcaeae697d978dcaca5441ff22533cbcc9ebc4f50b606e7485b931436"},
     {file = "tensorflow_tensorboard-1.5.1-py3-none-any.whl", hash = "sha256:749845a950009cc2a95b9ba7cd915eff01b363e3e2a71d3eee056890f37ecdb3"},
 ]
+termcolor = [
+    {file = "termcolor-1.1.0.tar.gz", hash = "md5:043e89644f8909d462fbbfa511c768df"},
+]
 terminado = [
     {file = "terminado-0.8.3-py2.py3-none-any.whl", hash = "sha256:a43dcb3e353bc680dd0783b1d9c3fc28d529f190bc54ba9a229f72fe6e7a54d7"},
     {file = "terminado-0.8.3.tar.gz", hash = "sha256:4804a774f802306a7d9af7322193c5390f1da0abb429e082a10ef1d46e6fb2c2"},
@@ -2743,6 +2846,12 @@ torch = [
     {file = "torch-1.4.0-cp37-none-macosx_10_9_x86_64.whl", hash = "sha256:405b9eb40e44037d2525b3ddb5bc4c66b519cd742bff249d4207d23f83e88ea5"},
     {file = "torch-1.4.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:504915c6bc6051ba6a4c2a43c446463dff04411e352f1e26fe13debeae431778"},
     {file = "torch-1.4.0-cp38-none-macosx_10_9_x86_64.whl", hash = "sha256:d7b34a78f021935ad727a3bede56a8a8d4fda0b0272314a04c5f6890bbe7bb29"},
+]
+torchfile = [
+    {file = "torchfile-0.1.0.tar.gz", hash = "md5:4579f2145b4c3ec2ef9eb43ac2eae15e"},
+]
+torchnet = [
+    {file = "torchnet-0.0.4.tar.gz", hash = "sha256:393e62e0111a49912398a7ddea36c7f737fd22b895e0d718ac05e71a946e3b9b"},
 ]
 torchsummary = [
     {file = "torchsummary-1.5.1-py3-none-any.whl", hash = "sha256:10f41d1743fb918f83293f13183f532ab1bb8f6639a1b89e5f8592ec1919a976"},
@@ -2793,6 +2902,9 @@ urllib3 = [
     {file = "urllib3-1.25.10-py2.py3-none-any.whl", hash = "sha256:e7983572181f5e1522d9c98453462384ee92a0be7fac5f1413a1e35c56cc0461"},
     {file = "urllib3-1.25.10.tar.gz", hash = "sha256:91056c15fa70756691db97756772bb1eb9678fa585d9184f24534b100dc60f4a"},
 ]
+visdom = [
+    {file = "visdom-0.1.8.9.tar.gz", hash = "sha256:c73ad23723c24a48156899f78dd76bd4538eba3edf9120b6c65a9528fa677126"},
+]
 wasabi = [
     {file = "wasabi-0.8.0-py3-none-any.whl", hash = "sha256:98bc9c492c6aa8628303a02961a5cfa7b0c7fa6d2b397abdeb0adc4b39397c49"},
     {file = "wasabi-0.8.0.tar.gz", hash = "sha256:75fec6db6193c8615d7f398ae4aa2c4ad294e6e3e81c6a6dbbbd3864ee2223c3"},
@@ -2801,13 +2913,13 @@ wcwidth = [
     {file = "wcwidth-0.1.8-py2.py3-none-any.whl", hash = "sha256:8fd29383f539be45b20bd4df0dc29c20ba48654a41e661925e612311e9f3c603"},
     {file = "wcwidth-0.1.8.tar.gz", hash = "sha256:f28b3e8a6483e5d49e7f8949ac1a78314e740333ae305b4ba5defd3e74fb37a8"},
 ]
+websocket-client = [
+    {file = "websocket_client-0.57.0-py2.py3-none-any.whl", hash = "sha256:0fc45c961324d79c781bab301359d5a1b00b13ad1b10415a4780229ef71a5549"},
+    {file = "websocket_client-0.57.0.tar.gz", hash = "sha256:d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010"},
+]
 werkzeug = [
     {file = "Werkzeug-1.0.1-py2.py3-none-any.whl", hash = "sha256:2de2a5db0baeae7b2d2664949077c2ac63fbd16d98da0ff71837f7d1dea3fd43"},
     {file = "Werkzeug-1.0.1.tar.gz", hash = "sha256:6c80b1e5ad3665290ea39320b91e1be1e0d5f60652b964a3070216de83d2e47c"},
-]
-wheel = [
-    {file = "wheel-0.34.2-py2.py3-none-any.whl", hash = "sha256:df277cb51e61359aba502208d680f90c0493adec6f0e848af94948778aed386e"},
-    {file = "wheel-0.34.2.tar.gz", hash = "sha256:8788e9155fe14f54164c1b9eb0a319d98ef02c160725587ad60f14ddc57b6f96"},
 ]
 widgetsnbextension = [
     {file = "widgetsnbextension-3.5.1-py2.py3-none-any.whl", hash = "sha256:bd314f8ceb488571a5ffea6cc5b9fc6cba0adaf88a9d2386b93a489751938bcd"},

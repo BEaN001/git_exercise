@@ -141,3 +141,4 @@ checkpoints/
 logs/
 data/
 .data/
+ckpt_local/

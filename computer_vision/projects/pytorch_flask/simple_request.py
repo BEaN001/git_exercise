@@ -33,3 +33,8 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     predict_result(args.file)
+
+"""
+Requests can be submitted via cURL:
+curl -X POST -F image=@'/Users/binyu/Downloads/9974c3be8f2775d0.jpg' 'http://localhost:5000/predict'
+"""

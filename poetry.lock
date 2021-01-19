@@ -738,6 +738,19 @@ url = "https://mirrors.aliyun.com/pypi/simple"
 reference = 'aliyun'
 
 [[package]]
+name = "kaikeba-flow"
+version = "0.0.1"
+description = "This is a mini but function completed neural networks framework"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.aliyun.com/pypi/simple"
+reference = 'aliyun'
+
+[[package]]
 name = "kiwisolver"
 version = "1.1.0"
 description = "A fast implementation of the Cassowary constraint solver"
@@ -2020,7 +2033,7 @@ reference = 'aliyun'
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "5daef1142b53a3d03d1c613b2c1f45037e81b6de0d9fbbc6d5d05447f076dce6"
+content-hash = "7ce21b9c70e61e7802f95e430fd34b661d2d0385f045e6c2b4c5ae617ae32a22"
 
 [metadata.files]
 absl-py = [
@@ -2215,6 +2228,10 @@ jupyter-console = [
 jupyter-core = [
     {file = "jupyter_core-4.6.3-py2.py3-none-any.whl", hash = "sha256:a4ee613c060fe5697d913416fc9d553599c05e4492d58fac1192c9a6844abb21"},
     {file = "jupyter_core-4.6.3.tar.gz", hash = "sha256:394fd5dd787e7c8861741880bdf8a00ce39f95de5d18e579c74b882522219e7e"},
+]
+kaikeba-flow = [
+    {file = "kaikeba_flow-0.0.1-py3-none-any.whl", hash = "sha256:e55af6f84ed9b6bab2caff581f9b97040025b9f3c75dbb6ee8573168fd86e8e4"},
+    {file = "kaikeba_flow-0.0.1.tar.gz", hash = "sha256:3fe19817a99b87969e4d070b3e6906ba48f8edd7356bc026601a33d85b422f23"},
 ]
 kiwisolver = [
     {file = "kiwisolver-1.1.0-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:7f4dd50874177d2bb060d74769210f3bce1af87a8c7cf5b37d032ebf94f0aca3"},
